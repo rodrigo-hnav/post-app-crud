@@ -6,7 +6,9 @@
 
 # Prerequisitos:
 
-Endponits con la URL Base: "http://localhost:3000"
+Configurar archivo .env con variable de entorno 
+VITE_BASE_URL="http://localhost:3000"
+para la url base de los endpoints
 
 Para ejucutar la app utilizar los siguienets comandos:
 
