@@ -4,8 +4,8 @@ const PostsList = ({ posts }) => {
   const [deletePost] = useDeletePostMutation();
 
   return (
-    <div>
-      <table>
+    <div className="d-flex justify-content-center mb-4 mt-3">
+      <table  className="table table-bordered table-striped mb-0">
         <thead>
           <tr>
             <th>Nombre</th>
@@ -20,7 +20,7 @@ const PostsList = ({ posts }) => {
               <td>{post.nombre}</td>
               <td>{post.descripcion}</td>
               <td>
-                <button
+                <button className=" btn btn-secondary"
                   onClick={() => {
 //Eliminar posts: retorna el post eliminado
                     deletePost(post.id)

@@ -1,4 +1,29 @@
-body{
-  background: #202020;
-  color:#fff
+
+#myDIV {
+    height:300px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  #myDIV div {
+    width: 80px;
+    height: 80px; 
+  }
+
+.table {
+    margin: 0 auto;
+    /* width: 90% !important;  */
+ }
+
+ .form-inline .form-group {
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+    margin-right:40px;
 }
+.form-inline .form-control {
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+}
+.form-inline .form-group { margin-right:20px;}

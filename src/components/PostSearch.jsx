@@ -12,9 +12,9 @@ const PostSearch = () => {
     if (isSuccess) setPosts(data);
   }, [isSuccess, data]);
 
-  //Manejo del estado de la peticion 
+  //Manejo del estado de la peticion
   if (isLoading) return <div>Cargando...</div>;
-  else if (isError) return <div>Error en la cominicación con el servidor</div>
+  else if (isError) return <div>Error en la cominicación con el servidor</div>;
 
   //Filtrar posts por nombre localmente
   const handleSubmit = (e) => {
@@ -29,9 +29,11 @@ const PostSearch = () => {
 
   return (
     <div>
-      <form onSubmit={handleSubmit}>
-        <input type="text" name="nombre" />
-        <button>Buscar</button>
+      <form onSubmit={handleSubmit} className="form-inline">
+        <div className="form-group ">
+          <input className="form-control" type="text" name="nombre" placeholder="Nombre a buscar" />
+        </div>
+        <button className=" btn btn-primary">Buscar</button>
       </form>
       <PostsList posts={posts} />
     </div>
